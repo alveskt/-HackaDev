@@ -5,6 +5,7 @@
   font-family: "Ibarra Real Nova", serif;
 }
 
+/* Navbar mobile media query 900px */
 @media (max-width: 900px) {
   html {
     height: 100vh;
@@ -50,6 +51,101 @@
   }
 
   .navbar-principal .navbar.item :not(img) {
+    cursor: pointer;
+  }
+
+  .navbar-principal .navbar.item:active :not(img) {
+    cursor: pointer;
+    transform: translateY(1px);
+  }
+
+  .navbar-principal .navbar.item img {
+    height: 5vh;
+  }
+
+  /* Icone x de fechar navbar-secundaria */
+  .navbar-principal #fechar {
+    display: none;
+  }
+
+  /* sacola */
+  #indicador-sacola {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar-principal .item-na-sacola {
+    margin-top: 3px;
+    display: block;
+    /* font-size: 2vh;
+    text-align: center; */
+    height: min-content;
+    width: 100%;
+    border: 1px solid #161616;
+    border-radius: 30px;
+    background: #dcdfe5;
+  }
+  .navbar-principal .item-na-sacola #quantidade {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7vh;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  /* navbar desktop */
+  html {
+    height: 100vh;
+  }
+
+  body {
+    background-color: #dcdfe5;
+    user-select: none;
+  }
+
+  /* Navbar principal */
+  .navbar-principal {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+  }
+
+  /* Lista da navbar principal */
+
+  .navbar-principal .lista {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+  }
+
+  /* itens da navbar principal */
+  .navbar-principal .navbar.item {
+    color: #002855;
+    font-size: 3vh;
+    width: 5vh;
+  }
+  .navbar-principal .navbar.item a {
+    text-decoration: none;
+  }
+
+  .navbar-principal .navbar.item {
+    text-align: center;
+    transition: 0.2s ease-in-out;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navbar-principal .navbar.item:not(img) {
     cursor: pointer;
   }
 
