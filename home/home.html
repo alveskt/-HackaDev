@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./components/css/reset.css">
+    <link rel="stylesheet" href="./components/css/footer.css">
+    <link rel="stylesheet" href="./components/css/catalogo.css">
+    <link rel="stylesheet" href="./components/css/carrousel.css">
+    <link rel="stylesheet" href="./components/css/navbar.css" />
+    <link rel="stylesheet" href="./components/css/menu.css" />
+    <link rel="stylesheet" href="./components/css/carrinho.css" />
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar superior -->
+        <nav class="navbar-principal">
+          <ul class="lista">
+            <li id="menu" class="navbar item">
+              <i class="fa-solid fa-bars"></i>
+              <p class="navbar-text"></p>
+            </li>
+  
+            <li class="navbar item">
+              <a class="logo" href="#">
+                <img class="logo-menu"
+                  src="./components/img/logo_kingsman.png"
+                  alt=""
+                />
+                <p class="navbar-text"></p>
+              </a>
+            </li>
+  
+            <li class="navbar item">
+              <!-- <a id="indicador-sacola" href=""> -->
+              <i id="sacola" class="fa-solid fa-bag-shopping"></i>
+              <div class="item-na-sacola"><p id="quantidade">8</p></div>
+              <!-- </a> -->
+            </li>
+          </ul>
+        </nav>
+  
+        <!-- Menu Lateral Esquerdo -->
+        <section class="sombra">
+          <div id="fundo-sair-menu"></div>
+          <nav class="navbar-secundaria">
+            <ul class="lista">
+              <div class="topo">
+                <section id="opcoes">
+                  <li id="fechar" class="navbar item">
+                    <i class="fa-solid fa-x"></i>
+                    <div></div>
+                    <div></div>
+                    <img class="logo-menu"
+                      src="./components/img/logo-kingsman--branco.png"
+                      alt=""
+                    />
+                    <div></div>
+                    <div></div>
+                  </li>
+                </section>
+                <section id="login">
+                  <li class="navbar item">
+                    <a href="#">
+                      <p class="navbar-text">Entrar</p>
+                    </a>
+                  </li>
+                </section>
+                <!-- <div class="barra-separacao"></div> -->
+                <section id="categoria">
+                  <li id="categoria-texto-li" class="navbar item">
+                    <p id="text-categoria" class="navbar-text">CATEGORIAS</p>
+                  </li>
+                  <div id="categorias">
+                    <li class="navbar item">
+                      <a href="#">
+                        <p class="navbar-text">Opção1</p>
+                      </a>
+                    </li>
+                    <li class="navbar item">
+                      <a href="#">
+                        <p class="navbar-text">Opção2</p>
+                      </a>
+                    </li>
+                    <li class="navbar item">
+                      <a href="#">
+                        <p class="navbar-text">Opção3</p>
+                      </a>
+                    </li>
+                  </div>
+                </section>
+                <div class="barra-separacao"></div>
+                <section id="novidades">
+                  <li class="navbar item">
+                    <a href="#">
+                      <p class="navbar-text">NOVIDADES</p>
+                    </a>
+                  </li>
+                </section>
+                <div class="barra-separacao"></div>
+                <section id="promocoes">
+                  <li class="navbar item">
+                    <a href="#">
+                      <p class="navbar-text">PROMOÇÕES</p>
+                    </a>
+                  </li>
+                </section>
+                <div class="barra-separacao"></div>
+                <section id="duvidas-sac">
+                  <li class="navbar item">
+                    <a href="#">
+                      <p class="navbar-text">DÚVIDAS E SAC</p>
+                    </a>
+                  </li>
+                </section>
+                <div class="barra-separacao"></div>
+              </div>
+  
+              <div class="baixo">
+                <li class="navbar item">
+                  <a href="#">
+                    <!-- <p class="navbar-text" id="kingsman">KingsMan</p> -->
+                    <img class="logo-menu"
+                      src="./components/img/logo-kingsman--branco.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </section>
+  
+        <!-- Carrinho lateral direita -->
+        <div class="sombra-carrinho">
+          <div id="fundo-sair-carrinho"></div>
+          <nav class="carrinho">
+            <section id="sair-quantidade">
+              <a>
+                <i id="sair-carrinho" class="fa-solid fa-arrow-left-long"></i>
+                <p id="sacola">Sacola (3)</p>
+              </a>
+            </section>
+            <section class="secao-carrinho">
+              <ul class="carrinho-produtos">
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="produto">
+                  <div class="foto-exclusao">
+                    <img
+                      class="foto-produto"
+                      src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+                      alt=""
+                    />
+                    <p class="texto-remover">Remover item</p>
+                  </div>
+                  <div class="nome-tamanho-preco-quantidade">
+                    <p class="nome-produto">Terno bonitão</p>
+                    <div class="tamanho-preco">
+                      <p class="tamanho">Tam: M</p>
+                      <p class="preco">R$199,99</p>
+                    </div>
+                    <div class="quantidade">
+                      <button class="menos-mais">-</button>
+                      <p class="numero-quantidade">10</p>
+                      <button class="menos-mais">+</button>
+                    </div>
+                  </div>
+                </section>
+              </ul>
+            </section>
+            <section class="subtotal-finalizar">
+              <p id="subtotal">Subtotal - R$ 10.450.00</p>
+              <button id="finalizar">Finalizar</button>
+            </section>
+          </nav>
+        </div>
+      </header>
+    <section class="carrousel">
+        <div class="imagens-carrousel">
+            <img class="itens-carrousel" src="./components/img/foto1.jpeg" alt="foto1">
+            <img class="itens-carrousel" src="./components/img/foto2.jpeg" alt="foto2">
+            <img class="itens-carrousel" src="./components/img/foto3.jpeg" alt="foto3">
+            <img class="itens-carrousel" src="./components/img/foto1.jpeg" alt="foto1">
+        </div>
+    </section>
+    <section class="catalogo">
+        <h1 class="titulo-catalogo">Catálogo</h1>
+        <div class="item-catalogo">
+            <img src="./components/img/terno-xadrez.jpg" alt="imagem terno">
+            <h2 class="nome-item">Terno Xadrez</h2>
+            <p class="preco">R$ 179,99</p>
+        </div>
+        <div class="item-catalogo">
+            <img src="./components/img/terno-liso.jpg" alt="imagem terno">
+            <h1 class="nome-item">Terno Liso</h1>
+            <p class="preco">R$ 149,99</p>
+        </div>
+        <div class="item-catalogo">
+            <img src="./components/img/terno-italiano.jpg" alt="imagem terno">
+            <h1 class="nome-item">Terno Italiano</h1>
+            <p class="preco">R$ 199,99</p>
+        </div>
+        <div class="item-catalogo">
+            <img src="./components/img/terno-slim.jpg" alt="imagem terno">
+            <h1 class="nome-item">Terno Slim</h1>
+            <p class="preco">R$ 159,99</p>
+        </div>
+        <div class="item-catalogo">
+            <img src="./components/img/terno-premium.jpg" alt="imagem terno">
+            <h1 class="nome-item">Terno Premium</h1>
+            <p class="preco">R$ 219,99</p>
+        </div>
+        <div class="item-catalogo">
+            <img src="./components/img/terno-slimfit.jpg" alt="imagem terno">
+            <h1 class="nome-item">Terno Slim Fit</h1>
+            <p class="preco">R$ 185,99</p>
+        </div>
+    </section>
+    <footer class="rodape">
+       <div class="copyright">
+        <i class="fa-solid fa-copyright"></i>
+        <p>Copyright</p>
+       </div> 
+        <i class="fa-brands fa-github"></i>
+        
+        <div class="desenvolvedores">
+            <h3>Desenvolvido Por:</h3>
+            <p>Augusto Angelo</p>
+            <p>Gustavo Alves</p>
+            <p>Gustavo Henrique</p>
+            <p>Igor Anjos</p>
+            <p>Simon Assagra</p>
+        </div>
+        
+        <img class="logo-rodape" src="./components/img/logo_kingsman.png" alt="logo-rodape">
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/3e98d4450d.js" crossorigin="anonymous"></script>
+    <script src="./components/js/navbar.js"></script>
+</body>
+</html>
