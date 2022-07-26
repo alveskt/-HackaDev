@@ -1,11 +1,11 @@
-@import url("reset.css");
+@import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 
 * {
   font-family: "Ibarra Real Nova", serif;
 }
-
-@media (max-width: 900px) {
+/* Menu para mobile */
+@media (max-width: 500px) {
   /* Sombra Navbar secundaria */
   .sombra {
     display: none;
@@ -29,6 +29,7 @@
     width: auto;
     margin: auto;
 }
+
   /* seções da navbar secundaria */
   .navbar-secundaria section {
     display: block;
@@ -150,5 +151,283 @@
 
   .navbar-secundaria .baixo img {
     height: 6vh;
+  }
+}
+
+/* Menu para mobile tablet */
+@media (min-width: 500px) and (max-width: 900px) {
+  /* Sombra Navbar secundaria */
+  .sombra {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1616167c;
+    width: 100%;
+    height: 100vh;
+    transition: 0.8s ease-in-out /*cubic-bezier(0.075, 0.82, 0.165, 1)*/;
+    opacity: 0;
+  }
+
+  #fundo-sair-menu {
+    background: transparent;
+    height: 100vh;
+    width: 100vw;
+  }
+  .logo-menu{
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+  /* seções da navbar secundaria */
+  .navbar-secundaria section {
+    display: block;
+  }
+
+  /* secão de opções, inicial na navbar secundaria */
+  .navbar-secundaria #opcoes {
+    height: 7vh;
+  }
+  .navbar-secundaria #fechar:hover {
+    cursor: pointer;
+  }
+
+  .navbar-secundaria #opcoes #fechar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fafafa;
+    width: 90%;
+    margin: auto;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .navbar-secundaria #opcoes img {
+    height: 5vh;
+  }
+
+  /* Lista navbar secundaria */
+  .navbar-secundaria .lista {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 55vw;
+    height: 100%;
+    background-color: #002855;
+  }
+
+  .navbar-secundaria .lista .navbar-text {
+    color: #fafafa;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+  }
+
+  .navbar-secundaria .lista .topo {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Opção entrar em navbar-secundaria */
+  .navbar-secundaria .lista #login {
+    background: #dcdfe57d;
+  }
+
+  .navbar-secundaria .lista #login .navbar-text {
+    color: #fafafa;
+  }
+
+  /* barra de separcao de seções da navbar secundaria */
+  .lista .barra-separacao {
+    display: block;
+    height: 0.2vw;
+    width: 90%;
+    /* border-bottom-left-radius: 100%;
+  border-top-right-radius: 100%; */
+    background: #fafafa;
+    margin: 0 auto;
+  }
+
+  /* itens da navbar secundaria */
+  .navbar-secundaria .lista .navbar.item {
+    font-size: 2.5vh;
+    font-weight: 300;
+    width: 100%;
+    height: max-content;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  /* categorias */
+
+  #categorias {
+    margin-left: 10vw;
+  }
+
+  #categorias .navbar.item {
+    width: 80%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  #categorias a {
+    text-decoration: dotted;
+    color: #fafafa;
+    font-size: 2.2vh;
+  }
+
+  #categorias li {
+    list-style-type: disc;
+    color: #fafafa;
+  }
+
+  #categoria #categoria-texto-li {
+    padding-bottom: 0;
+  }
+
+  /* Estilo de Links */
+  .navbar-secundaria a {
+    text-decoration: none;
+  }
+
+  /* Parte baixa da navbar secundaria */
+  .navbar-secundaria .baixo .navbar.item {
+    text-align: center;
+  }
+
+  .navbar-secundaria .baixo img {
+    height: 6vh;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Menu para desktop */
+
+  /* Sombra Navbar secundaria */
+  .sombra {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    right: -50%;
+    margin: 0 auto;
+    width: 60vw;
+    height: 7vh;
+    transition: 0.8s ease-in-out /*cubic-bezier(0.075, 0.82, 0.165, 1)*/;
+  }
+
+  #opcoes {
+    display: none;
+  }
+
+  #fundo-sair-menu {
+    display: none;
+  }
+  .logo-menu{
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+  /* seções da navbar secundaria */
+  /* .navbar-secundaria section {
+  display: block;
+} */
+
+  /* secão de opções, inicial na navbar secundaria */
+
+  .navbar-secundaria #opcoes img {
+    display: none;
+  }
+
+  .topo {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  #categorias {
+    display: none;
+  }
+
+  /* Lista navbar secundaria */
+  .navbar-secundaria .lista {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    height: 7vh;
+  }
+
+  .navbar-secundaria .lista .navbar-text {
+    color: #002855;
+    font-weight: 500;
+    font-size: 2.5vh;
+    text-align: center;
+    margin: 0 4px;
+  }
+
+  .navbar-secundaria .lista .navbar-text:hover {
+    cursor: pointer;
+  }
+
+  .navbar-secundaria .lista .topo {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* itens da navbar secundaria */
+  .navbar-secundaria .lista .navbar.item {
+    font-size: 2vh;
+    font-weight: 300;
+    width: 100%;
+  }
+
+  /* categorias */
+
+  #categorias {
+    margin-left: 10vw;
+  }
+
+  #categorias .navbar.item {
+    width: 80%;
+  }
+
+  #categorias a {
+    text-decoration: dotted;
+    color: #fafafa;
+    font-size: 2.2vh;
+  }
+
+  #categorias li {
+    list-style-type: disc;
+    color: #fafafa;
+  }
+
+  #categoria #categoria-texto-li {
+    padding-bottom: 0;
+  }
+
+  /* Estilo de Links */
+  .navbar-secundaria a {
+    text-decoration: none;
+  }
+  .navbar-secundaria .baixo {
+    display: none;
+  }
+
+  .navbar-secundaria .baixo img {
+    display: none;
   }
 }

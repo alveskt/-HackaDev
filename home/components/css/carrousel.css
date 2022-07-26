@@ -1,28 +1,71 @@
-.carrousel{
-    width: 100%;
-    height: 40vh;
-    overflow: hidden;
+
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+	font-family: 'Ibarra Real Nova', serif;
 }
 
-.imagens-carrousel {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    animation: animacao 15s infinite;
+@media (max-width: 900px){
+    .carrousel{
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+    }
+    
+    .imagens-carrousel {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        animation: animacao 15s infinite;
+    }
+    
+    .carrousel .imagens-carrousel .itens-carrousel {    
+        width: 33.3%;
+    }
+    
+    @keyframes animacao {
+        0% {margin-left: 0%;}
+        20% {margin-left: 0%;}
+        30% {margin-left: -100%;}
+        50% {margin-left: -100%;}
+        60% {margin-left: -200%;}
+        90% {margin-left: -200%;}
+        100% {margin-left: -300%;}
+    }
 }
 
-.carrousel .imagens-carrousel .itens-carrousel {    
-    width: 33.3%;
-}
-
-@keyframes animacao {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-    30% {margin-left: -100%;}
-    50% {margin-left: -100%;}
-    60% {margin-left: -200%;}
-    90% {margin-left: -200%;}
-    100% {margin-left: -300%;}
+@media (min-width: 900px){
+    .carrousel{
+        width: 80%;
+        height: 60vh;
+        overflow: hidden;
+        margin: auto;
+        box-shadow: 10px 10px 10px 0 #4d82be;
+    }
+    
+    .imagens-carrousel {
+        display: flex;
+        width: 400%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        animation: animacao 15s infinite;
+    }
+    
+    .carrousel .imagens-carrousel .itens-carrousel {    
+        width: 33.3%;
+        height: 100%;
+    }
+    
+    @keyframes animacao {
+        0% {margin-left: 0%;}
+        20% {margin-left: 0%;}
+        30% {margin-left: -100%;}
+        50% {margin-left: -100%;}
+        60% {margin-left: -200%;}
+        90% {margin-left: -200%;}
+        100% {margin-left: -300%;}
+    }
 }

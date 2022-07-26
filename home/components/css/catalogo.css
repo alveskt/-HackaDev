@@ -1,4 +1,13 @@
-.catalogo{
+
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+	font-family: 'Ibarra Real Nova', serif;
+}
+
+@media (max-width: 900px){
+    
+    .catalogo{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -34,4 +43,58 @@
 img{
     width: 42vw;
     height: 38vh;
+}
+
+}
+
+@media (min-width: 900px){
+    
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        max-width: 80%;
+        margin: auto;
+        padding-bottom: 10px;
+    
+    }
+    .titulo-catalogo{
+        display: grid;
+        grid-column: 1 / 5;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3vh;
+        
+    }
+    .item-catalogo{
+        display: grid;
+        margin: 5px;
+        border-radius: 2px;
+        box-shadow: 0 0 5px #4d82be;
+        padding-right: 2px;
+        padding-left: 2px;
+        height: 400px;
+    }
+    .item-catalogo:hover{
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .nome-item, .preco{
+        font-size: 2.5vh;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 5px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        
+    }
+    img{
+        width: 300px;
+        height: 330px;
+        margin: auto;
+    }
 }
