@@ -9,6 +9,7 @@ botaoMenu.addEventListener("click", () => {
 function abrirMenu() {
   console.log("abrir menu");
   componenteMenuSombra.style.display = "block";
+  componenteCarrinhoSombra.style.display = "none";
   function abrir() {
     componenteMenuSombra.style.opacity = "1";
   }
@@ -43,6 +44,7 @@ const itemNaSacola = document.querySelector(".item-na-sacola");
 
 function AbrirCarrinho() {
   componenteCarrinhoSombra.style.display = "block";
+  componenteMenuSombra.style.display = "block";
   itemNaSacola.style.display = "none";
   function abrir() {
     componenteCarrinhoSombra.style.opacity = "1";
