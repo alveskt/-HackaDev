@@ -5,7 +5,7 @@
   font-family: 'Ibarra Real Nova', serif;
 }
 
-main{
+.login-main{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -22,26 +22,26 @@ main{
 }
 
 .header-logo{
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-section{
+.login-section{
   height: 80vh;
   width: 90%;
 }
 
-header{
+.login-header{
   color: #002855;
   display: flex;
   height: 20vh;
-  width: 100%;
+  width: 90%;
 }
 
-form{
+.login-form{
   display: flex;
   flex-direction: column;
 }
@@ -51,27 +51,33 @@ button, input{
   border-radius: 5px;
 }
 
-button{
+.login-btn{
   background-color: #002855;
   color: #fafafa;
   height: 50px;
   /* margin-top: 10px; */
 }
 
-label{
+.login-label{
   color: #002855;
 }
 
-input{
+.login-input{
   background-color: #dcdfe5;
   margin-bottom: 10px;
   height: 50px;
+  font-size: 30px;
 }
 
-a{
+.login-a{
   margin-bottom: 10px;
 }
 
 .redirect-cadastro{
   text-align: center;
+}
+
+i{
+  margin-top: auto;
+  margin-bottom: auto;
 }
