@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://media.discordapp.net/attachments/998358787507376228/998361355700670504/kingsman4.png?width=400&height=400"
+    />
+    <!-- Estilizações no mobile & desktop-->
+    <link rel="stylesheet" href="checkout.css" />
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="sair-descricao">
+        <i class="fa-solid fa-angle-left"></i>
+        <p class="texto-descricao">Seu pedido</p>
+      </header>
+      <form class="formulario informacoes-pessoais" autocomplete="on">
+        <div class="entrada">
+          <label class="entrada-texto" for="nome-completo">Nome Completo</label>
+          <input type="text" name="nome" id="nome-completo" />
+        </div>
+        <div class="entrada">
+          <label class="entrada-texto" for="email">Seu E-mail</label>
+          <input type="email" name="email" id="entrada-email" />
+        </div>
+        <div class="entrada">
+          <label class="entrada-texto" for="confirmacao-email"
+            >Confirmar seu e-mail</label
+          >
+          <input type="email" name="email" id="confirmacao-email" />
+        </div>
+      </form>
+      <section class="formulario formas-pagamento">
+        <div class="texto-descricao">
+          <p class="formas-de-pagamento">Formas de pagamento</p>
+        </div>
+        <div class="select-formas-pagamento">
+          <ul class="lista formas-pagamento">
+            <li class="lista-pagamento item">
+              <button class="selecao-forma" id="cartao-credito">
+                <i class="fa-solid fa-credit-card"></i>
+                <p class="texto-forma-pagamento">Cartão de Crédito</p>
+              </button>
+            </li>
+            <li class="lista-pagamento item">
+              <button class="selecao-forma" id="boleto">
+                <i class="fa-solid fa-barcode"></i>
+                <p class="texto-forma-pagamento">Boleto</p>
+              </button>
+            </li>
+            <li class="lista-pagamento item">
+              <button class="selecao-forma" id="pix">
+                <i class="fa-brands fa-pix"></i>
+                <p class="texto-forma-pagamento">PIX</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pagamento" id="pagamento-cartao-credito">
+        <fieldset class="formulario-pagamento">
+          <div class="entrada numero-cartao">
+            <label class="entradas-cartao-texto" for="numero-cartao"
+              >Número do cartão</label
+            >
+            <input type="number" id="numero-cartao" />
+          </div>
+          <div class="entrada nome-titular">
+            <label class="entradas-cartao-texto" for="nome-titular"
+              >Nome do titular</label
+            >
+            <input type="text" id="nome-titular" />
+          </div>
+          <section class="validade">
+            <div class="entrada-mes">
+              <label class="texto-informacao-cartao" for="validade-mes-cartao"
+                >Mês</label
+              >
+              <select class="validade-mes-cartao">
+                <option>MM</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="entrada-ano">
+              <label class="texto-informacao-cartao" for="validade-ano-cartao"
+                >Ano</label
+              >
+              <select class="validade-ano-cartao">
+                <option>AA</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+              </select>
+            </div>
+            <div class="entrada-codigo-verificacao">
+              <label class="texto-informacao-cartao" for="codigo-verificacao"
+                >CVV</label
+              >
+              <input type="number" placeholder="CVV" id="codigo-verificacao" />
+            </div>
+          </section>
+          <div class="entrada-parcelas">
+            <label class="texto-informacao-cartao" for="parcelas"
+              >Selecione o número de parcelas</label
+            >
+            <select class="parcelas-cartao">
+              <div>
+                <option value="1">1x de R$ 90,00</option>
+                <option value="2">2x de R$ 45,00</option>
+              </div>
+            </select>
+          </div>
+        </fieldset>
+      </section>
+      <section class="pagamento" id="pagamento-boleto"></section>
+      <section class="pagamento" id="pagamento-pix"></section>
+
+      <section class="detalhes-da-compra">
+        <div class="botao-detalhes-da-compra" id="botao-detalhes-da-compra">
+          <p>Detalhes da Compra</p>
+        </div>
+        <ul class="lista-produtos" id="lista-produtos">
+          <li class="item-lista">
+            <img
+              src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+              alt=""
+            />
+            <div class="nome-tamanho-quantidade">
+              <p class="nome">Terno bonitão</p>
+              <div class="tamanho-quantidade">
+                <p class="tamanho">Tam:P</p>
+                <p class="quantidade">quant:1</p>
+              </div>
+            </div>
+            <div class="preco-lista">
+              <p>R$ 100.00</p>
+            </div>
+          </li>
+          <li class="item-lista">
+            <img
+              src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+              alt=""
+            />
+            <div class="nome-tamanho-quantidade">
+              <p class="nome">Terno bonitão</p>
+              <div class="tamanho-quantidade">
+                <p class="tamanho">Tam:P</p>
+                <p class="quantidade">quant:1</p>
+              </div>
+            </div>
+            <div class="preco-lista">
+              <p>R$ 100.00</p>
+            </div>
+          </li>
+          <li class="item-lista">
+            <img
+              src="https://storetng.vteximg.com.br/arquivos/ids/440137-1000-1000/I20MTL03_950_1-TRAJE-SOCIAL-EM-POLIESTER-LISO.jpg?v=637904605398630000"
+              alt=""
+            />
+            <div class="nome-tamanho-quantidade">
+              <p class="nome">Terno bonitão</p>
+              <div class="tamanho-quantidade">
+                <p class="tamanho">Tam:P</p>
+                <p class="quantidade">quant:1</p>
+              </div>
+            </div>
+            <div class="preco-lista">
+              <p>R$ 100.00</p>
+            </div>
+          </li>
+          <li class="item-lista">
+            <p class="total-preco">Total:</p>
+            <p class="preco">R$ 300,00</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="finalizar-compra">
+      <a class="comprar" href="#">
+        <button class="botao-comprar">COMPRAR</button>
+      </a>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/2c911c4ac6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/checkout/checkout.js"></script>
+  </body>
+</html>
