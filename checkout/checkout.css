@@ -1,0 +1,695 @@
+@import url("../navbarMenuCarrinho/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+  font-family: "Ibarra Real Nova", serif;
+  user-select: none;
+}
+
+@media (max-width: 500px) {
+  body {
+    background: #fafafa;
+  }
+  .container {
+    top: 0;
+    width: 93vw;
+    height: max-content;
+    margin: auto;
+    background: #fafafa;
+    padding: 1vw;
+    height: 95vh;
+    overflow-y: scroll;
+  }
+
+  .container::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .container::-webkit-scrollbar-track {
+    background: #002855;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+    background-color: #dcdfe5;
+    width: 100%;
+    /* border-radius: 100px; */
+  }
+
+  /* Botão de volta e Descrição: Seu pedido */
+  .sair-descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 10vh;
+    font-size: 3.5vh;
+    color: #002855;
+  }
+
+  .sair-descricao i {
+    font-size: 2.5vh;
+  }
+
+  /* formulerio de dados pessoai */
+  .formulario.informacoes-pessoais {
+    border-bottom: 1px solid #dcdfe5;
+    margin: 0 3vw;
+  }
+
+  .entrada {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5vh;
+    color: #002855;
+  }
+
+  .entrada .entrada-texto {
+    font-size: 2vh;
+    font-weight: lighter;
+    margin-bottom: 0.5vh;
+  }
+
+  .entrada input {
+    border: none;
+    background-color: #dcdfe5;
+    height: 3.5vh;
+    border-radius: 10px;
+    font-size: 2.5vh;
+    font-weight: 600;
+  }
+
+  .entrada input:focus {
+    outline: 1px solid #002855;
+  }
+
+  /* Formulário de informações da pagamento */
+
+  .formulario.formas-pagamento {
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .formulario.formas-pagamento .texto-descricao {
+    font-size: 3vh;
+    text-align: center;
+    margin: 1.5vh 0;
+    color: #002855;
+  }
+
+  .lista.formas-pagamento {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+  }
+
+  /* Botões de seleção das formas de pagamento */
+  .lista.formas-pagamento .selecao-forma {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdfe5;
+    height: 10vh;
+    width: 14vh;
+    background: #fafafa;
+    margin-bottom: 2vh;
+    color: #dcdfe5;
+    transition: 0.5s ease-in-out;
+  }
+
+  .lista.formas-pagamento #cartao-credito {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #dcdfe5;
+    border: 1px solid #002855;
+    color: #002855;
+  }
+
+  .lista.formas-pagamento #pix {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .lista.formas-pagamento i {
+    font-size: 3vh;
+  }
+
+  .lista.formas-pagamento .texto-forma-pagamento {
+    font-size: 2.5vh;
+  }
+
+  /* seção de opções do cartão de crédito */
+  .formulario-pagamento {
+    border: 1px solid #dcdfe5;
+    border-radius: 3px;
+    padding: 1vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .entrada.numero-cartao,
+  .entrada.nome-titular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+  }
+  .entrada input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .entradas-cartao-texto {
+    color: #002855;
+    font-size: 2vh;
+    font-weight: lighter;
+    margin-bottom: 0.5vh;
+  }
+
+  /* Validade do cartao e código de seguranca*/
+  .validade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .texto-informacao-cartao {
+    font-size: 2vh;
+    color: #002855;
+    padding-bottom: 1vh;
+  }
+
+  /*seção dos inputs de validade  */
+  .entrada-mes,
+  .entrada-ano,
+  .entrada-codigo-verificacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .validade select,
+  .validade input {
+    width: 20vw;
+    height: 10vw;
+    border-radius: 5px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #dcdfe5;
+  }
+
+  .validade select:focus,
+  .validade input:focus {
+    outline: 1px solid #002855;
+    background: #dcdfe5;
+  }
+
+  /* Parcelas a pagar */
+  .entrada-parcelas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.7vh;
+  }
+  .parcelas-cartao {
+    width: 80vw;
+    height: 10vw;
+    border-radius: 5px;
+    background: #fafafa;
+    border: 1px solid #161616;
+    margin-bottom: 1.5vh;
+    font-size: 2vh;
+  }
+
+  .parcelas-cartao:focus {
+    outline: 1px solid #161616;
+    background: #dcdfe5;
+  }
+
+  option {
+    background: #dcdfe5;
+    color: #161616;
+    font-size: 10px;
+    height: min-content;
+    box-shadow: none;
+  }
+
+  /* Detalhes de produto */
+  .detalhes-da-compra {
+    margin: 1vh auto;
+    width: 90vw;
+    border-top: 1px solid #dcdfe5;
+    border-bottom: 1px solid #dcdfe5;
+    transition: 1s ease-in-out;
+  }
+
+  .botao-detalhes-da-compra {
+    font-size: 2vh;
+    text-align: center;
+    margin: 1vh 0;
+    color: #002855;
+  }
+
+  .lista-produtos {
+    display: none;
+  }
+
+  .item-lista {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    margin: 1vh auto;
+    color: #002855;
+    background: #dcdfe5;
+    padding: 1vh;
+    border-bottom: 1px solid #161616;
+    border-top: 1px solid #161616;
+  }
+
+  .item-lista img {
+    width: 20vw;
+  }
+
+  .nome-tamanho-quantidade {
+    width: 40vw;
+  }
+
+  .nome {
+    font-size: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+
+  .tamanho-quantidade {
+    display: flex;
+    font-size: 1.7vh;
+    justify-content: space-around;
+  }
+  .preco-lista {
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .item-lista .total-preco,
+  .item-lista .preco {
+    font-size: 2.5vh;
+  }
+
+  /* Botão de finalizar o pagamento */
+  .finalizar-compra {
+    width: 95vw;
+    margin: 0 auto;
+    margin-left: 0;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+  }
+  .finalizar-compra a {
+    width: 85vw;
+    height: 5vh;
+  }
+  .botao-comprar {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 0 0 #161616;
+    background: #598900;
+    color: #fafafa;
+  }
+}
+
+/* Desktop */
+@media (min-width: 500px) {
+  body {
+    background: #fafafa;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .container {
+    top: 0;
+    width: 500px;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 5px;
+    height: 93vh;
+    overflow-y: scroll;
+    border-bottom: 1px solid #dcdfe5;
+    border-left: 1px solid #dcdfe5;
+    border-top: 1px solid #dcdfe5;
+    border-radius: 10px;
+
+    /* width: 500px;
+    height: max-content;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 5px;
+    margin-top: 5px;
+    height: 95vh;
+    overflow-y: scroll;
+    border-bottom: 1px solid #dcdfe5;
+    border-left: 1px solid #dcdfe5;
+    border-top: 1px solid #dcdfe5;
+    border-radius: 10px; */
+  }
+
+  .container::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .container::-webkit-scrollbar-track {
+    background: #002855;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+    background-color: #dcdfe5;
+    width: 100%;
+    /* border-radius: 100px; */
+  }
+
+  /* Botão de volta e Descrição: Seu pedido */
+  .sair-descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 10%;
+    font-size: 15px;
+    color: #002855;
+  }
+
+  .sair-descricao i {
+    font-size: 10px;
+  }
+
+  /* formulerio de dados pessoai */
+  .formulario.informacoes-pessoais {
+    border-bottom: 1px solid #dcdfe5;
+    margin: 0 3%;
+  }
+
+  .entrada {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5%;
+    color: #002855;
+  }
+
+  .entrada .entrada-texto {
+    font-size: 10px;
+    font-weight: lighter;
+    margin-bottom: 0.5%;
+  }
+
+  .entrada input {
+    border: none;
+    background-color: #dcdfe5;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .entrada input:focus {
+    outline: 1px solid #002855;
+  }
+
+  /* Formulário de informações da pagamento */
+
+  .formulario.formas-pagamento {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .formulario.formas-pagamento .texto-descricao {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0;
+    color: #002855;
+  }
+
+  .lista.formas-pagamento {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+  }
+
+  .lista.formas-pagamento .selecao-forma:hover {
+    cursor: pointer;
+  }
+
+  /* Botões de seleção das formas de pagamento */
+  .lista.formas-pagamento .selecao-forma {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdfe5;
+    height: 90px;
+    width: 120px;
+    background: #fafafa;
+    margin-bottom: 20px;
+    color: #dcdfe5;
+  }
+
+  /* .lista.formas-pagamento .selecao-forma:focus {
+    background: #dcdfe5;
+    border: 1px solid #002855;
+    color: #002855;
+  } */
+
+  .lista.formas-pagamento #cartao-credito {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .lista.formas-pagamento #pix {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .lista.formas-pagamento i {
+    font-size: 20px;
+  }
+
+  .lista.formas-pagamento .texto-forma-pagamento {
+    font-size: 15px;
+  }
+
+  /* seção de opções do cartão de crédito */
+
+  #pagamento-cartao-credito {
+    display: none;
+  }
+
+  .formulario-pagamento {
+    border: 1px solid #dcdfe5;
+    border-radius: 3px;
+    padding: 1%;
+    margin: 0 auto;
+  }
+
+  .entrada.numero-cartao,
+  .entrada.nome-titular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 100%;
+  }
+  .entrada input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .entradas-cartao-texto {
+    color: #002855;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-bottom: 1%;
+  }
+
+  /* Validade do cartao e código de seguranca*/
+  .validade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+  }
+
+  .texto-informacao-cartao {
+    font-size: 10px;
+    color: #002855;
+    padding-bottom: 1%;
+  }
+
+  /*seção dos inputs de validade  */
+  .entrada-mes,
+  .entrada-ano,
+  .entrada-codigo-verificacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .validade-mes-cartao:hover,
+  .validade-ano-cartao:hover,
+  #codigo-verificacao:hover {
+    cursor: pointer;
+  }
+  .entrada-ano:hover,
+  .entrada-codigo-verificacao:hover {
+    cursor: pointer;
+  }
+
+  .validade select,
+  .validade input {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #dcdfe5;
+  }
+
+  .validade select:focus,
+  .validade input:focus {
+    outline: 1px solid #002855;
+    background: #dcdfe5;
+  }
+
+  /* Parcelas a pagar */
+  .entrada-parcelas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 10px;
+  }
+  .parcelas-cartao {
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    background: #fafafa;
+    border: 1px solid #161616;
+    margin-bottom: 1.5%;
+    font-size: 10px;
+  }
+
+  .parcelas-cartao:hover {
+    cursor: pointer;
+  }
+
+  .parcelas-cartao:focus {
+    outline: 1px solid #161616;
+    background: #dcdfe5;
+  }
+
+  option {
+    background: #dcdfe5;
+    color: #161616;
+    font-size: 10px;
+    height: min-content;
+    box-shadow: none;
+  }
+
+  /* Detalhes de produto */
+  .detalhes-da-compra {
+    margin: 1vh auto;
+    width: 450px;
+    border-top: 1px solid #dcdfe5;
+    border-bottom: 1px solid #dcdfe5;
+    transition: 0.5s ease-in-out;
+  }
+
+  .botao-detalhes-da-compra {
+    font-size: 10px;
+    text-align: center;
+    margin: 1% 0;
+    color: #002855;
+  }
+
+  .botao-detalhes-da-compra:hover {
+    cursor: pointer;
+  }
+
+  .item-lista {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 1% auto;
+    color: #002855;
+    background: #dcdfe5;
+    padding: 1%;
+    border-bottom: 1px solid #161616;
+    border-top: 1px solid #161616;
+  }
+
+  .item-lista img {
+    width: 60px;
+  }
+
+  .nome-tamanho-quantidade {
+    width: 200px;
+  }
+  .nome {
+    font-size: 10px;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+  .tamanho-quantidade {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-around;
+  }
+  .preco-lista {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .item-lista .total-preco,
+  .item-lista .preco {
+    font-size: 10px;
+  }
+
+  /* Botão de finalizar o pagamento */
+  .finalizar-compra {
+    width: 500px;
+    margin: 0 auto;
+    margin-left: 0;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+  }
+  .finalizar-compra a {
+    width: 85vw;
+    height: 5vh;
+  }
+  .botao-comprar {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 0 0 #161616;
+    background: #598900;
+    color: #fafafa;
+  }
+}
