@@ -1,0 +1,144 @@
+* {
+    font-family: 'Ibarra Real Nova', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.todos {
+    display: grid;
+}
+
+.button {
+    background: black;
+    color: white;
+    padding: 10px 100px;
+    margin: 2vh;
+    margin-top: 5vh;
+    border: nano;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.botao button{
+    /* margin-left: 2%; */
+    margin-right: 10px;
+    height: 5vh;
+    width: 4.0vh;
+}
+
+
+
+.botao {
+    display: flex;
+    border: none;
+    margin: 0 auto;
+    margin-left: 30px;
+    width: 92vw;
+    font-size: 14px;
+    justify-content: left;
+    letter-spacing: 10px;
+    height: 4vh;
+}
+
+
+
+.photo1 {
+    width: 65%;
+    height: 100%;
+    
+    border-radius: 10px;
+    
+    margin: 0px 60px;
+}
+
+.text {
+    /* height: calc(100vh - 45vh); */
+    flex: auto;
+   font-weight: 500; 
+   align-items: center;
+   margin: 20px;
+}
+
+.text h1{
+    font-size: 30px;
+    margin: 0px 10px;
+    font-weight: 600;
+
+}
+
+.text h2{
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 10px;
+    font-weight: 550;
+
+}
+
+.text .a{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 5px;
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+.text .b{
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+
+@media(min-width:900px){
+
+    .todos{
+        display: flex;
+        margin: 2rem;
+        margin-top: 5rem;
+    }
+
+    
+
+  .photo1{
+        
+        width: 380px;
+        height: 500px;
+   }  
+
+   .informacoes{
+    margin: 0 auto;
+   }
+
+    .button {
+        
+        background: black;
+        color: white;
+        padding: 10px 100px;
+        margin: 4vh;
+        margin-top: 5vh;
+        border: nano;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 900;
+    }
+    
+    .botao .button{
+       
+        margin: 0;
+    }
+    
+    
+    
+    /* .botao {
+        border: none;
+        margin: 0 auto;
+        width: 92vw;
+        font-size: 14px;
+        justify-content: left;
+        letter-spacing: 10px;
+        height: 4vh;
+    } */
+}
