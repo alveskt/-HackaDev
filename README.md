@@ -24,6 +24,6 @@
   <img src="https://media.discordapp.net/attachments/955695681052487733/1000039426069647390/unknown.png?width=183&height=400">
   <img src="https://media.discordapp.net/attachments/955695681052487733/1000039539907231785/unknown.png?width=183&height=400">
 
-## E Disponível para visualização no link <a href='https://hackadev-kingsman.netlify.app/' target="_blank">KingsMan</a>
+## E Disponível para visualização no link <a href='https://hackadev-kingsman.netlify.app/' target='_blank'>KingsMan</a>
 
 <p></p>
