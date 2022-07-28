@@ -248,6 +248,7 @@
     width: 90vw;
     border-top: 1px solid #dcdfe5;
     border-bottom: 1px solid #dcdfe5;
+    padding-bottom: 5vh;
     transition: 1s ease-in-out;
   }
 
@@ -255,7 +256,6 @@
     font-size: 2vh;
     text-align: center;
     margin: 1vh 0;
-    padding-bottom: 5vh;
     color: #002855;
   }
 
