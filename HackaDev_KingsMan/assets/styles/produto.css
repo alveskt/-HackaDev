@@ -14,7 +14,7 @@
     color: white;
     padding: 10px 100px;
     margin: 2vh;
-    margin-top: 5vh;
+    margin-top: 3vh;
     border: none;
     border-radius: 10px;
     font-size: 14px;
@@ -37,9 +37,9 @@
     margin: 0 auto;
     margin-left: 30px;
     width: 92vw;
-    justify-content: left;
-    letter-spacing: 10px;
-    height: 4vh;
+    /* justify-content: left;
+    letter-spacing: 10px; */
+    
   }
   .photo1 {
     width: 65%;
