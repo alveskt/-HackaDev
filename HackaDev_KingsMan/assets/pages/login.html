@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icone da barra superior -->
+    <link
+      rel="shortcut icon"
+      href="https://media.discordapp.net/attachments/998358787507376228/998361355700670504/kingsman4.png?width=400&height=400"
+    />
+    <!-- Conexão com styles -->
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="login-header">
+      <a href="javascript:history.back()">
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
+
+      <div class="header-logo">
+        <h1 class="descricao">Login</h1>
+        <span>Kingsman</span>
+      </div>
+    </header>
+    <main class="login-main">
+      <section class="login-section">
+        <form class="login-form" action="">
+          <label class="login-label" for="nome-usuario">E-mail</label>
+          <input
+            class="login-input"
+            type="text"
+            size="50"
+            maxlength="50"
+            id="nome-usuario"
+          />
+
+          <label class="login-label" for="senha-usuario">Senha</label>
+          <input
+            class="login-input"
+            type="password"
+            size="25"
+            maxlength="25"
+            id="senha-usuario"
+          />
+
+          <a href="/HackaDev_KingsMan/home.html" class="login-link">
+            Esqueceu sua senha?
+          </a>
+
+          <a class="botao-entrar" href="/HackaDev_KingsMan/home.html">
+            <button class="login-btn">Entrar</button>
+          </a>
+        </form>
+
+        <div class="redirect-cadastro">
+          <p id="ou">-ou-</p>
+          <a href="../pages/cadastro.html" class="login-link"
+            >Ainda não é cadastrado?</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/2c911c4ac6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

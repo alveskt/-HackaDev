@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap"
       rel="stylesheet"
     />
+    <!-- Icone da barra superior -->
     <link
       rel="shortcut icon"
       href="https://media.discordapp.net/attachments/998358787507376228/998361355700670504/kingsman4.png?width=400&height=400"
     />
-    <!-- Estilizações no mobile & desktop-->
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="carrinho.css" />
-    <title>Navbar</title>
+    <!-- Conexão com styles -->
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/menu.css" />
+    <link rel="stylesheet" href="../styles/carrinho.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/produto.css" />
+    <title>Produto</title>
   </head>
+
   <body>
     <header>
       <!-- Navbar superior -->
@@ -31,7 +36,7 @@
           </li>
 
           <li class="navbar item">
-            <a class="logo" href="#">
+            <a class="logo" href="/HackaDev_KingsMan/home.html">
               <img
                 src="https://media.discordapp.net/attachments/998358787507376228/998359187627200522/kingsman.png?width=400&height=400"
                 alt=""
@@ -70,7 +75,7 @@
               </section>
               <section id="login">
                 <li class="navbar item">
-                  <a href="#">
+                  <a href="./login.html">
                     <p class="navbar-text">ENTRAR</p>
                   </a>
                 </li>
@@ -318,10 +323,65 @@
       </div>
     </header>
 
+    <!-- Produtos -->
+    <div class="container">
+      <div class="foto-section">
+        <img class="photo1" src="../img/terno-liso.jpg" />
+      </div>
+
+      <div class="informacoes">
+        <div class="text">
+          <h1>TERNO LISO</h1>
+          <h2>R$149,99</h2>
+          <h4 class="a">em até 3x R$49,99</h4>
+          <h4 class="b">Escolha o tamanho</h4>
+        </div>
+        <div class="botao">
+          <button>P</button>
+          <button>M</button>
+          <button>G</button>
+          <button>GG</button>
+        </div>
+
+        <div class="action">
+          <button class="button">Adicionar à Sacola</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="rodape">
+      <div class="copyright">
+        <i class="fa-solid fa-copyright"></i>
+        <p>Copyright</p>
+      </div>
+      <a
+        class="git-logo"
+        href="https://github.com/alveskt/-HackaDev"
+        target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+
+      <div class="desenvolvedores">
+        <h3>Desenvolvido Por:</h3>
+        <p>Augusto Angelo</p>
+        <p>Gustavo Alves</p>
+        <p>Gustavo Henrique</p>
+        <p>Igor Anjos</p>
+        <p>Simon Assagra</p>
+        <img
+          class="logo-rodape"
+          src="../img/logo_kingsman.png"
+          alt="logo-rodape"
+        />
+      </div>
+    </footer>
+
+    <!-- scripts e icones -->
     <script
-      src="https://kit.fontawesome.com/2c911c4ac6.js"
+      src="https://kit.fontawesome.com/3e98d4450d.js"
       crossorigin="anonymous"
     ></script>
-    <script src="navbar.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

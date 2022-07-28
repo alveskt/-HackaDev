@@ -1,0 +1,207 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .body {
+    background: #fafafa;
+  }
+
+  .cadastro-header {
+    color: #002855;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 60vw;
+    margin-left: 2vw;
+  }
+
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cadastro-header .back-btn,
+  .cadastro-header .descricao {
+    font-size: 4vh;
+    color: #002855;
+  }
+
+  .cadastro-header span {
+    font-size: 2.5vh;
+    color: #002855;
+  }
+
+  #form-cadastro {
+    display: block;
+    width: 95vw;
+    height: 82vh;
+    margin: 0 auto;
+    margin-right: 0;
+    overflow-y: scroll;
+  }
+
+  #form-cadastro::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  #form-cadastro::-webkit-scrollbar-track {
+    background: #002855;
+  }
+
+  #form-cadastro::-webkit-scrollbar-thumb {
+    background-color: #dcdfe5;
+    width: 100%;
+    /* border-radius: 100px; */
+  }
+
+  .cadastro-item {
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cadastro-item .cadastro-label {
+    margin-bottom: 0.7vh;
+    color: #002855;
+    font-size: 2.5vh;
+    font-weight: 700;
+  }
+
+  .cadastro-input {
+    width: 90vw;
+    border: none;
+    background: #dcdfe5;
+    height: 6vh;
+    border-radius: 8px;
+    font-size: 3vh;
+  }
+
+  .cadastro-input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .enviar-cadastro {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enviar-cadastro a {
+    height: 6vh;
+    width: 90vw;
+  }
+
+  .enviar-button {
+    border: none;
+    background: #002855;
+    color: #fafafa;
+    font-size: 3vh;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+  .body {
+    background: #fafafa;
+  }
+
+  .cadastro-header {
+    color: #002855;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 55vw;
+    margin-left: 2vw;
+  }
+
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cadastro-header .back-btn,
+  .cadastro-header .descricao {
+    font-size: 4vh;
+    color: #002855;
+  }
+
+  .cadastro-header span {
+    font-size: 2.5vh;
+    color: #002855;
+  }
+
+  #form-cadastro {
+    display: block;
+    width: 500px;
+    height: max-content;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+
+  .cadastro-item {
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cadastro-item .cadastro-label {
+    margin-bottom: 0.7vh;
+    color: #002855;
+    font-size: 2.5vh;
+    font-weight: 700;
+  }
+
+  .cadastro-input {
+    width: 480px;
+    border: none;
+    background: #dcdfe5;
+    height: 6vh;
+    border-radius: 8px;
+    font-size: 3vh;
+  }
+
+  .cadastro-input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .enviar-cadastro {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enviar-cadastro a {
+    height: 6vh;
+    width: 480px;
+  }
+
+  .enviar-button {
+    border: none;
+    background: #002855;
+    color: #fafafa;
+    font-size: 3vh;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+}

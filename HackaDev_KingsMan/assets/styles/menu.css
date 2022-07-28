@@ -24,11 +24,11 @@
     height: 100vh;
     width: 100vw;
   }
-  .logo-menu{
+  .logo-menu {
     height: auto;
     width: auto;
     margin: auto;
-}
+  }
 
   /* seções da navbar secundaria */
   .navbar-secundaria section {
@@ -174,11 +174,11 @@
     height: 100vh;
     width: 100vw;
   }
-  .logo-menu{
+  .logo-menu {
     height: auto;
     width: auto;
     margin: auto;
-}
+  }
 
   /* seções da navbar secundaria */
   .navbar-secundaria section {
@@ -327,11 +327,11 @@
   #fundo-sair-menu {
     display: none;
   }
-  .logo-menu{
+  .logo-menu {
     height: auto;
     width: auto;
     margin: auto;
-}
+  }
 
   /* seções da navbar secundaria */
   /* .navbar-secundaria section {

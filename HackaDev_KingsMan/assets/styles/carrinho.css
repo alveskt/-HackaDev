@@ -206,8 +206,13 @@
     padding: 0 3vw;
   }
 
-  .subtotal-finalizar #finalizar {
+  .subtotal-finalizar a {
     width: 40%;
+    height: 100%;
+  }
+
+  .subtotal-finalizar #finalizar {
+    width: 100%;
     height: 100%;
     border-radius: 0;
     border: none;
@@ -414,6 +419,11 @@
     font-size: 2.2vh;
     background: #fafafa;
     padding: 0 3vw;
+  }
+
+  .subtotal-finalizar a {
+    width: 40%;
+    height: 100%;
   }
 
   .subtotal-finalizar #finalizar {
