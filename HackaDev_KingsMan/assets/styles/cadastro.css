@@ -82,6 +82,7 @@
     height: 6vh;
     border-radius: 8px;
     font-size: 3vh;
+    color: #161616;
   }
 
   .cadastro-input:focus {
