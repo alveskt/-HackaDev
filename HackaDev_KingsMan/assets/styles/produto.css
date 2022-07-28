@@ -9,47 +9,44 @@
   .container {
     display: grid;
   }
-
   .button {
     background: black;
     color: white;
     padding: 10px 100px;
     margin: 2vh;
     margin-top: 5vh;
-    border: nano;
+    border: none;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 900;
   }
-
   .botao button {
     /* margin-left: 2%; */
     margin-right: 10px;
-    height: 5vh;
-    width: 4vh;
+    height: 5.5vh;
+    width: 5vh;
+    font-size: 13px;
+    text-align: center;
   }
-
+  .botao :last-child{
+    text-align: start;
+  }
   .botao {
     display: flex;
     border: none;
     margin: 0 auto;
     margin-left: 30px;
     width: 92vw;
-    font-size: 14px;
     justify-content: left;
     letter-spacing: 10px;
     height: 4vh;
   }
-
   .photo1 {
     width: 65%;
     height: 100%;
-
     border-radius: 10px;
-
     margin: 0px 60px;
   }
-
   .text {
     /* height: calc(100vh - 45vh); */
     flex: auto;
@@ -57,20 +54,17 @@
     align-items: center;
     margin: 20px;
   }
-
   .text h1 {
     font-size: 30px;
     margin: 0px 10px;
     font-weight: 600;
   }
-
   .text h2 {
     display: inline-block;
     font-size: 20px;
     margin: 5px 10px;
     font-weight: 550;
   }
-
   .text .a {
     display: inline-block;
     font-size: 12px;
@@ -78,11 +72,10 @@
     font-weight: 600;
     color: #9a9a9a;
   }
-
   .text .b {
     font-size: 15px;
     margin-left: 12px;
-    margin-top: 30px;
+    margin-top: 15px;
     font-weight: 600;
   }
 }
@@ -97,7 +90,6 @@
   .foto-section{
     margin-left: 20vh;
   }
-
   .photo1 {
     width: 30vw;
     height: 70vh;
@@ -106,7 +98,6 @@
   .informacoes {
     margin-right: 30vh;
   }
-
   .button {
     background: black;
     color: white;
@@ -118,18 +109,34 @@
     font-size: 14px;
     font-weight: 900;
   }
-
-  .botao .button {
-    margin: 0;
+  .botao button {
+    margin-left: 10px;
+    height: 5vh;
+    width: 4vh;
+    font-size: 13px;
+    text-align: center;
   }
-
-  /* .botao {
-        border: none;
-        margin: 0 auto;
-        width: 92vw;
-        font-size: 14px;
-        justify-content: left;
-        letter-spacing: 10px;
-        height: 4vh;
-    } */
+  .text h1 {
+    font-size: 30px;
+    margin: 0px 10px 5px;
+    font-weight: 600;
+  }
+  .text h2 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 10px;
+    font-weight: 550;
+  }
+  .text .a {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 5px;
+    font-weight: 600;
+    color: #9a9a9a;
+  }
+  .text .b {
+    font-size: 20px;
+    margin: 25px 10px 5px;
+    font-weight: 600;
+  }
 }
