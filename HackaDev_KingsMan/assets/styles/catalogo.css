@@ -9,7 +9,7 @@
   .container {
     background: #fafafa;
     overflow-y: scroll;
-    height: 100vh;
+    height: 92vh;
     color: #161616;
   }
 
@@ -27,6 +27,54 @@
   }
 
   .catalogo {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .titulo-catalogo {
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin: 2vw;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
+
+  .item-catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    width: 40vw;
+  }
+
+  .item-catalogo a {
+    text-decoration: none;
+    color: #161616;
+  }
+
+  .item-catalogo img {
+    height: 35vw;
+  }
+  .item-catalogo .nome-item,
+  .item-catalogo .preco {
+    font-size: 2vh;
+    margin-top: 1vh;
+    text-transform: uppercase;
+  }
+
+  /* .catalogo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -65,7 +113,7 @@
     width: 42vw;
     height: 38vh;
     margin-bottom: 1.5vh;
-  }
+  } */
 }
 
 @media (min-width: 900px) {
@@ -89,6 +137,59 @@
   }
 
   .catalogo {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .titulo-opcao-visualizacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .titulo-catalogo {
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 550;
+    text-transform: uppercase;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
+
+  .item-catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 3vh;
+    width: 25vw;
+  }
+
+  .item-catalogo a {
+    text-decoration: none;
+    color: #161616;
+  }
+
+  .item-catalogo img {
+    height: 20vw;
+  }
+  .item-catalogo .nome-item,
+  .item-catalogo .preco {
+    font-size: 2vh;
+    margin-top: 1vh;
+    text-transform: uppercase;
+  }
+
+  /* .catalogo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
@@ -136,5 +237,5 @@
     height: 330px;
     margin: auto;
     margin-bottom: 1.5vh;
-  }
+  } */
 }
