@@ -92,24 +92,28 @@
     margin: 2rem;
     margin-top: 5rem;
     height: 100vh;
+    justify-content: space-around;
+  }
+  .foto-section{
+    margin-left: 20vh;
   }
 
   .photo1 {
-    width: 380px;
-    height: 500px;
+    width: 30vw;
+    height: 70vh;
   }
 
   .informacoes {
-    margin: 0 auto;
+    margin-right: 30vh;
   }
 
   .button {
     background: black;
     color: white;
     padding: 10px 100px;
-    margin: 4vh;
+     /* margin: 4vh; */
     margin-top: 5vh;
-    border: nano;
+    border: none;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 900;

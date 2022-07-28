@@ -64,7 +64,7 @@
   }
 
   .entrada .entrada-texto {
-    font-size: 2vh;
+    font-size: vh;
     font-weight: lighter;
     margin-bottom: 0.5vh;
   }
@@ -360,6 +360,9 @@
     border-top: 1px solid #dcdfe5;
     border-radius: 10px;
   }
+  .texto-descricao{
+    font-size: 28px;
+  }
 
   .container::-webkit-scrollbar {
     width: 4px;
@@ -387,7 +390,7 @@
   }
 
   .sair-descricao i {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   /* formulerio de dados pessoai */
@@ -404,7 +407,7 @@
   }
 
   .entrada .entrada-texto {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: lighter;
     margin-bottom: 0.5%;
   }
@@ -432,7 +435,7 @@
   }
 
   .formulario.formas-pagamento .texto-descricao {
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
     margin: 20px 0;
     color: #002855;
@@ -518,7 +521,7 @@
 
   .entradas-cartao-texto {
     color: #002855;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: lighter;
     margin-bottom: 1%;
   }
@@ -533,7 +536,7 @@
   }
 
   .texto-informacao-cartao {
-    font-size: 10px;
+    font-size: 15px;
     color: #002855;
     padding-bottom: 1%;
   }
@@ -578,7 +581,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 10px;
+    font-size: 15px;
   }
   .parcelas-cartao {
     width: 450px;
@@ -587,7 +590,7 @@
     background: #fafafa;
     border: 1px solid #161616;
     margin-bottom: 1.5%;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .parcelas-cartao:hover {
@@ -617,7 +620,7 @@
   }
 
   .botao-detalhes-da-compra {
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     margin: 1% 0;
     color: #002855;
@@ -647,25 +650,25 @@
     width: 200px;
   }
   .nome {
-    font-size: 10px;
+    font-size: 20px;
     margin-bottom: 2%;
     text-align: center;
   }
 
   .tamanho-quantidade {
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     justify-content: space-around;
   }
   .preco-lista {
-    font-size: 10px;
+    font-size: 15px;
     display: flex;
     align-items: center;
   }
 
   .item-lista .total-preco,
   .item-lista .preco {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   /* Botão de finalizar o pagamento */

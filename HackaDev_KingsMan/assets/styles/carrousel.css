@@ -56,8 +56,9 @@
     height: 60vh;
     overflow: hidden;
     margin: auto;
-    box-shadow: 10px 10px 0 0 #002855;
-    /* box-shadow: 10px 10px 10px 0 #4d82be; */
+    /* box-shadow: 10px 10px 0 0 #002855; */
+    box-shadow: 10px 10px 10px 0 #4d82be;
+    margin-bottom: 2vh;
   }
 
   .imagens-carrousel {
