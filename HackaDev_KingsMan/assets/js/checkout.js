@@ -1,9 +1,6 @@
 // Cartão de credito
-const botaoSelecaoPagamentoCartaoCredito =
-  document.getElementById("cartao-credito");
-const pagamentoCartaoDetalhes = document.getElementById(
-  "pagamento-cartao-credito"
-);
+const botaoSelecaoPagamentoCartaoCredito = document.getElementById("cartao-credito");
+const pagamentoCartaoDetalhes = document.getElementById("pagamento-cartao-credito");
 
 // Boleto
 const botaoSelecaoPagamentoBoleto = document.getElementById("boleto");
@@ -25,10 +22,21 @@ function tirarCorBotao(botao) {
   botao.style.color = "#dcdfe5";
 }
 
+// function abrirFecharSecaoPagamento(secaoAbrir, secaoFechar1, secaoFechar2) {
+//   secaoAbrir.style.display = "block";
+//   secaoFechar1.style.display = "none";
+//   secaoFechar2.style.display = "none";
+// }
 function abrirFecharSecaoPagamento(secaoAbrir, secaoFechar1, secaoFechar2) {
-  secaoAbrir.style.display = "block";
-  secaoFechar1.style.display = "none";
-  secaoFechar2.style.display = "none";
+  if(secaoAbrir.style.display == "block"){
+    secaoAbrir.style.display = "none";
+    secaoFechar1.style.display = "none";
+    secaoFechar2.style.display = "none";
+  }else{
+    secaoAbrir.style.display = "block";
+    secaoFechar1.style.display = "none";
+    secaoFechar2.style.display = "none";
+  }
 }
 
 botaoSelecaoPagamentoBoleto.addEventListener("click", () => {
@@ -69,7 +77,7 @@ botaoSelecaoPagamentoPIX.addEventListener("click", () => {
       pagamentoCartaoDetalhes,
       pagamentoBoletoDetalhes
     ),
-    10000
+    1000
   );
 });
 
