@@ -1,14 +1,14 @@
-@import url("../navbarMenuCarrinho/reset.css");
+@import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 
 * {
   font-family: "Ibarra Real Nova", serif;
-  user-select: none;
 }
 
 @media (max-width: 500px) {
   body {
     background: #fafafa;
+    user-select: none;
   }
   .container {
     top: 0;
@@ -105,6 +105,9 @@
     align-items: center;
   }
 
+  li {
+    list-style: none;
+  }
   /* Botões de seleção das formas de pagamento */
   .lista.formas-pagamento .selecao-forma {
     border-radius: 0;
@@ -323,9 +326,17 @@
     height: 100%;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px 0 0 #161616;
+    box-shadow: 2px 2px 0 0 #002855;
     background: #598900;
     color: #fafafa;
+    transition: 0.1s ease-in-out;
+  }
+
+  .botao-comprar:active {
+    transform: translateY(3px);
+    transform: translateX(3px);
+    /* background: #88b82d; */
+    box-shadow: 0 0 0 0 #002855;
   }
 }
 
@@ -348,19 +359,6 @@
     border-left: 1px solid #dcdfe5;
     border-top: 1px solid #dcdfe5;
     border-radius: 10px;
-
-    /* width: 500px;
-    height: max-content;
-    margin: 0 auto;
-    background: #fafafa;
-    padding: 5px;
-    margin-top: 5px;
-    height: 95vh;
-    overflow-y: scroll;
-    border-bottom: 1px solid #dcdfe5;
-    border-left: 1px solid #dcdfe5;
-    border-top: 1px solid #dcdfe5;
-    border-radius: 10px; */
   }
 
   .container::-webkit-scrollbar {
@@ -449,6 +447,10 @@
 
   .lista.formas-pagamento .selecao-forma:hover {
     cursor: pointer;
+  }
+
+  li {
+    list-style: none;
   }
 
   /* Botões de seleção das formas de pagamento */
@@ -688,8 +690,15 @@
     height: 100%;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px 0 0 #161616;
+    box-shadow: 2px 2px 0 0 #002855;
     background: #598900;
     color: #fafafa;
+  }
+
+  .botao-comprar:active {
+    transform: translateY(3px);
+    transform: translateX(3px);
+    /* background: #88b82d; */
+    box-shadow: 0 0 0 0 #002855;
   }
 }

@@ -4,41 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap"
       rel="stylesheet"
     />
+    <!-- Icone da barra superior -->
     <link
       rel="shortcut icon"
       href="https://media.discordapp.net/attachments/998358787507376228/998361355700670504/kingsman4.png?width=400&height=400"
     />
     <!-- Estilizações no mobile & desktop-->
-    <link rel="stylesheet" href="checkout.css" />
+    <link rel="stylesheet" href="../styles/checkout.css" />
 
     <title>Checkout</title>
   </head>
   <body>
     <div class="container">
       <header class="sair-descricao">
-        <i class="fa-solid fa-angle-left"></i>
+        <a href="javascript:history.back()">
+          <i class="fa-solid fa-angle-left"></i>
+        </a>
+
         <p class="texto-descricao">Seu pedido</p>
       </header>
       <form class="formulario informacoes-pessoais" autocomplete="on">
         <div class="entrada">
           <label class="entrada-texto" for="nome-completo">Nome Completo</label>
-          <input type="text" name="nome" id="nome-completo" />
+          <input
+            type="text"
+            name="nome"
+            id="nome-completo"
+            size="50"
+            maxlength="50"
+          />
         </div>
+
         <div class="entrada">
           <label class="entrada-texto" for="email">Seu E-mail</label>
-          <input type="email" name="email" id="entrada-email" />
+          <input
+            type="email"
+            name="email"
+            size="30"
+            maxlength="30"
+            id="entrada-email"
+          />
         </div>
         <div class="entrada">
           <label class="entrada-texto" for="confirmacao-email"
             >Confirmar seu e-mail</label
           >
-          <input type="email" name="email" id="confirmacao-email" />
+          <input
+            type="email"
+            name="email"
+            size="30"
+            maxlength="30"
+            id="confirmacao-email"
+          />
         </div>
       </form>
       <section class="formulario formas-pagamento">
@@ -74,13 +99,19 @@
             <label class="entradas-cartao-texto" for="numero-cartao"
               >Número do cartão</label
             >
-            <input type="number" id="numero-cartao" />
+            <input
+              type="tel"
+              id="numero-cartao"
+              size="16"
+              maxlength="16"
+              minlength="16"
+            />
           </div>
           <div class="entrada nome-titular">
             <label class="entradas-cartao-texto" for="nome-titular"
               >Nome do titular</label
             >
-            <input type="text" id="nome-titular" />
+            <input type="text" id="nome-titular" maxlength="50" />
           </div>
           <section class="validade">
             <div class="entrada-mes">
@@ -206,7 +237,7 @@
       </section>
     </div>
     <section class="finalizar-compra">
-      <a class="comprar" href="#">
+      <a class="comprar" href="/HackaDev_KingsMan/home.html">
         <button class="botao-comprar">COMPRAR</button>
       </a>
     </section>
@@ -215,6 +246,6 @@
       src="https://kit.fontawesome.com/2c911c4ac6.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/checkout/checkout.js"></script>
+    <script src="../js/checkout.js"></script>
   </body>
 </html>

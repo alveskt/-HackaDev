@@ -1,0 +1,245 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: #fafafa;
+  }
+
+  .login-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .login-header {
+    display: flex;
+    left: 0;
+    justify-content: space-between;
+    height: 10vh;
+    width: 55vw;
+    margin-left: 3vw;
+    align-items: center;
+  }
+
+  .login-header a,
+  .login-header .descricao {
+    font-size: 4vh;
+    color: #002855;
+  }
+
+  .login-header span {
+    font-size: 2.5vh;
+    color: #002855;
+  }
+
+  .back-btn {
+    background-color: white;
+    color: #002855;
+    font-size: 30px;
+    width: 10%;
+    height: 100%;
+  }
+
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .login-section {
+    height: 80vh;
+    width: 90%;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .login-form button,
+  .login-form input {
+    border: none;
+    border-radius: 5px;
+    height: 6vh;
+  }
+
+  .botao-entrar {
+    height: 6vh;
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  .login-btn {
+    background-color: #002855;
+    color: #fafafa;
+    height: 100%;
+    width: 100%;
+    font-size: 3vh;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+  }
+
+  .login-label {
+    color: #002855;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    margin-bottom: 0.7vh;
+    font-weight: 700;
+  }
+
+  .login-input {
+    background-color: #dcdfe5;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 3vh;
+  }
+
+  .login-input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .login-link {
+    font-size: 2.5vh;
+    color: #002855;
+    margin-bottom: 3vh;
+  }
+
+  #ou {
+    font-size: 2vh;
+    margin: 1.5vw;
+  }
+
+  .redirect-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  i {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background: #fafafa;
+  }
+
+  .login-main {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-header {
+    display: flex;
+    left: 0;
+    justify-content: space-between;
+    height: 10vh;
+    width: 55vw;
+    margin-left: 3vw;
+    align-items: center;
+  }
+
+  .login-header a,
+  .login-header .descricao {
+    font-size: 4vh;
+    color: #002855;
+  }
+
+  .login-header span {
+    font-size: 2.5vh;
+    color: #002855;
+  }
+
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .login-section {
+    height: max-content;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .login-form button,
+  .login-form input {
+    border: none;
+    border-radius: 5px;
+    height: 6vh;
+  }
+  .login-btn {
+    background-color: #002855;
+    color: #fafafa;
+    height: 100%;
+    width: 100%;
+    margin-top: 2vh;
+    font-size: 3vh;
+    font-weight: 700;
+  }
+
+  .login-label {
+    color: #002855;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    margin-bottom: 0.7vh;
+    font-weight: 700;
+  }
+
+  .login-input {
+    background-color: #dcdfe5;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 3vh;
+    width: 480px;
+  }
+
+  .login-input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .login-link {
+    font-size: 2.5vh;
+    color: #002855;
+    margin-bottom: 3vh;
+  }
+
+  #ou {
+    font-size: 2vh;
+    margin: 1.5vw;
+  }
+
+  .redirect-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  i {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

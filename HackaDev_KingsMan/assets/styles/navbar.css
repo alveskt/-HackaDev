@@ -7,10 +7,6 @@
 
 /* Navbar mobile media query 900px */
 @media (max-width: 900px) {
-  html {
-    height: 100vh;
-  }
-
   body {
     background-color: #dcdfe5;
     user-select: none;
@@ -33,6 +29,7 @@
     align-items: center;
     margin-left: 3vh;
     margin-right: 3vh;
+    color: #002855;
   }
 
   /* itens da navbar principal */
@@ -98,10 +95,6 @@
 
 @media (min-width: 900px) {
   /* navbar desktop */
-  html {
-    height: 100vh;
-  }
-
   body {
     background-color: #dcdfe5;
     user-select: none;
@@ -109,6 +102,7 @@
 
   /* Navbar principal */
   .navbar-principal {
+    width: 100vw;
     height: 7vh;
     display: flex;
     align-items: center;
