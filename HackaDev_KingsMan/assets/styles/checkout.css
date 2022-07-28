@@ -12,12 +12,12 @@
   }
   .container {
     top: 0;
-    width: 88vw;
+    width: 93vw;
     height: max-content;
     margin: auto;
     background: #fafafa;
     padding: 1vw;
-    height: 95vh;
+    height: 88vh;
     overflow-y: scroll;
   }
 
