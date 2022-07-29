@@ -46,8 +46,12 @@
     color: #002855;
   }
 
+  .sair-descricao a {
+    text-decoration: none;
+  }
   .sair-descricao i {
     font-size: 2.5vh;
+    color: #002855;
   }
 
   /* formulerio de dados pessoai */
@@ -361,7 +365,7 @@
     border-top: 1px solid #dcdfe5;
     border-radius: 10px;
   }
-  .texto-descricao{
+  .texto-descricao {
     font-size: 28px;
   }
 
@@ -389,9 +393,12 @@
     font-size: 15px;
     color: #002855;
   }
-
+  .sair-descricao a {
+    text-decoration: none;
+  }
   .sair-descricao i {
     font-size: 20px;
+    color: #002855;
   }
 
   /* formulerio de dados pessoai */
