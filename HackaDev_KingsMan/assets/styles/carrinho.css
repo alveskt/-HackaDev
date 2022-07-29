@@ -108,7 +108,7 @@
   .carrinho .secao-carrinho .produto img {
     height: 20vh;
     width: 15vh;
-    object-fit:cover;
+    object-fit: cover;
     margin-bottom: 1vh;
   }
 

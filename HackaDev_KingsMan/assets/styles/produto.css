@@ -28,7 +28,7 @@
     font-size: 13px;
     text-align: center;
   }
-/*   .botao :last-child{
+  /*   .botao :last-child{
     text-align: start;
   } */
   .botao {
@@ -39,7 +39,6 @@
     width: 92vw;
     /* justify-content: left;
     letter-spacing: 10px; */
-    
   }
   .photo1 {
     width: 65%;
@@ -87,7 +86,7 @@
     height: 100vh;
     justify-content: space-around;
   }
-  .foto-section{
+  .foto-section {
     margin-left: 20vh;
   }
   .photo1 {
@@ -102,7 +101,7 @@
     background: black;
     color: white;
     padding: 10px 100px;
-     /* margin: 4vh; */
+    /* margin: 4vh; */
     margin-top: 5vh;
     border: none;
     border-radius: 10px;
