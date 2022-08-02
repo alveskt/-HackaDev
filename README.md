@@ -27,4 +27,3 @@
 ## E Disponível para visualização no link <a href='https://hackadev-kingsman.netlify.app/' target='_blank'>KingsMan</a>
 
 <p></p>
-//teste
