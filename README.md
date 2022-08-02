@@ -44,3 +44,8 @@
 </div>
 
 ## E Disponível para visualização no link <a href='https://hackadev-kingsman.netlify.app/' target='_blank'>KingsMan</a>
+<<<<<<< HEAD
+=======
+
+<p></p>
+>>>>>>> 556e35d6c61c458819a5033453f8dc9037bca407
