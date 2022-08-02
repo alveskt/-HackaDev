@@ -33,7 +33,7 @@
     <div id="login-cadastro">
       <img align="center" src="https://cdn.discordapp.com/attachments/955695681052487733/1003737069459345529/unknown.png?width=282&height=608">
       <img align="center" src="https://cdn.discordapp.com/attachments/955695681052487733/1003737069903958066/unknown.png?width=283&height=609">
-      <img align="center" src="https://media.discordapp.net/attachments/955695681052487733/1003742766368563220/unknown.png?width=285&height=609">
+      <img align="center" src="https://media.discordapp.net/attachments/955695681052487733/1003742766368563220/unknown.png?width=283&height=609">
     </div>
     <h1>Checkout</h1>
     <div id="checkout">
