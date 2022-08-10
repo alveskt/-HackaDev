@@ -199,6 +199,7 @@
     margin-top: 2vh;
     font-size: 3vh;
     font-weight: 700;
+    cursor: pointer;
   }
 
   .login-label {
